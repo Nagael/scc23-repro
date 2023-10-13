@@ -6,3 +6,5 @@ This repository contains
   with the file format expected by the `--custom` argument of Chameleon
   
 * the webinar slides that were presented on September 13th, 2023.
+
+* there is a six-page limit for the report
