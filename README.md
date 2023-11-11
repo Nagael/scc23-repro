@@ -9,7 +9,7 @@ This repository contains
 
 * there is a six-page limit for the report
 
-## Guidelines on the Reproducibility Challenge
+## Instructions for the Reproducibility Challenge
 
 The Reproducibility Challenge is based on the SC22 paper [Symmetric Block-Cyclic Distribution: Fewer
 Communications Leads to Faster Dense Cholesky
@@ -48,7 +48,16 @@ of the competition, on **Wednesday November 15th at 5:00pm**. Here are the requi
   not be a plot present in the paper. We will give precise directions **at 7:00pm on Monday November
   13th**.
 
+* By **5:00pm on Wednesday November 15th**, your report needs to be uploaded on the file server.
+
+
 Members of the Reproducible Challenge Commitee will visit the teams during the
 competition **on Tuesday Monday November 14th from 10:15AM to noon and from
 1:30PM to 2:30PM, SCC Booth,** to enquire about your progress, you are expected
 to be available to answer their questions.
+
+
+Please note some information at: 
+[https://github.com/nagael/scc23-repro](https://github.com/nagael/scc23-repro).
+
+
