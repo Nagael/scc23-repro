@@ -17,7 +17,7 @@ Factorization](https://inria.hal.science/hal-03768910/file/final_version_no_copy
 
 The goal of the challenge is to reproduce results from this paper. The challenge will be evaluated
 based on a written report, limited to **6 pages**, that should be handed to the SCC committee at the end
-of the competition, on **Wednesday November 15th at 5:30pm**. Here are the requirements for this report:
+of the competition, on **Wednesday November 15th at 5:00pm**. Here are the requirements for this report:
 
 * Provide a description of your hardware.
 
@@ -48,6 +48,7 @@ of the competition, on **Wednesday November 15th at 5:30pm**. Here are the requi
   not be a plot present in the paper. We will give precise directions **at 7:00pm on Monday November
   13th**.
 
-Members of the Reproducible Challenge Commitee will visit the teams during the competition (**on
-Tuesday Monday November 14th morning from 9:00am to 11:45am**) to enquire about your progress, you are
-expected to be available to answer their questions.
+Members of the Reproducible Challenge Commitee will visit the teams during the
+competition **on Tuesday Monday November 14th from 10:15AM to noon and from
+1:30PM to 2:30PM, SCC Booth,** to enquire about your progress, you are expected
+to be available to answer their questions.
