@@ -60,4 +60,38 @@ to be available to answer their questions.
 Please note some information at: 
 [https://github.com/nagael/scc23-repro](https://github.com/nagael/scc23-repro).
 
+The main content of the Reproducibility Challenge is already known by all the teams;
+details of the requirements can be found on the \href{https://discourse.studentclustercompetition.us/}{Discourse server of the challenge}.
 
+## Additional requirements for the Reproducibility Challenge
+
+The main content of the Reproducibility Challenge is already known by all the teams;
+details of the requirements can be found on the [Discourse server of the challenge](https://discourse.studentclustercompetition.us/)
+
+Additional requirements revealed on the day of the challenge (Monday November 13th 2023, 7:00pm) are presented below. These additional requirements are part of the competition as much as the previous ones. Your findings regarding this new topic and the related experiments should be included in your report and will be evaluated.
+
+**Topic:** symmetric matrix inversion using Cholesky
+
+
+You are expected to test out different data distributions for the inversion of a symmetric positive definite matrix *A* using Cholesky factorization.
+
+This operation POINV, denoted POINV, is composed of three steps:
+(1 - POTRF) a Cholesky factorization of *A = LL^T*; 
+(2 - TRTRI) a triangular inversion to compute *L^{-1}*; 
+(3 - LAUUM) a symmetric matrix multiplication to compute *A^{-1} = L^{-1}^T L^{-1}*.
+Steps (2) and (3) together are referred to as the POTRI operation.
+
+
+Section 5.F.2 of the paper details the communication scheme associated with the distributed execution of each step of the operation. The communication scheme of step (2) does not show any symmetry that can be taken advantage of using SBC distribution over regular 2DBC. Hence, a strategy based on the redistribution of the tiles of the matrix between each step is presented in the same section: it uses SBC distribution for steps (1) and (3) and 2DBC for step (2).
+
+Formulas for the theoretical volume of communications using 2DBC distribution alone or the redistribution strategy are provided.
+
+The POINV operation as a whole is directly accessible in Chameleon. Besides, it allows to provide a direct option to manage two distinct distributions for the operation via the +CHAMELEON_POINV_REMAP+ environment variable.
+
+Details can be found in the [Chameleon documentation](https://solverstack.gitlabpages.inria.fr/chameleon/dev/group__CHAMELEON__Complex64__t__Tile_gaebb6657aca7f68f07bbf92f7fceed8d7.html#gaebb6657aca7f68f07bbf92f7fceed8d7)
+
+**Requirements**
+For this new topic, you are required to:
+1. Produce performance and time-to-solution plots similar to Figures 10 and 12 in the paper for the POINV operation as a whole. They must feature experimental results for 2DBC and SBC distributions as well as the redistribution strategy.
+2. Generate a plot of the total volume of communications for each distribution, similar to Figure 8. Compare this volume to the value predicted by the theory.
+3. Observe the relative performance of each distribution strategy and provide a qualitative interpretation considering the reduction of communications.
