@@ -60,9 +60,6 @@ to be available to answer their questions.
 Please note some information at: 
 [https://github.com/nagael/scc23-repro](https://github.com/nagael/scc23-repro).
 
-The main content of the Reproducibility Challenge is already known by all the teams;
-details of the requirements can be found on the \href{https://discourse.studentclustercompetition.us/}{Discourse server of the challenge}.
-
 ## Additional requirements for the Reproducibility Challenge
 
 The main content of the Reproducibility Challenge is already known by all the teams;
